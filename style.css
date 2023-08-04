@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 60px;
+    background-color:teal;
+    color: white;
+    font-size: 50px;
+    font-family: 'Handjet', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none; 
+}
+
+.gameContainer {
+    position: relative;
+    background-color: darkslategray;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 0;
+}
+
+.line {
+    background-color: bisque;
+    position: absolute;
+    left: 0;
+    transform: rotate(90deg) translate(22vw, 8vw);
+    
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, 15vw);
+    grid-template-columns: repeat(3, 15vw);
+}
+
+.box {
+    border: 2px solid bisque;
+    font-size: 10vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    background-color: rgb(47, 95, 95)
+}
+
+.gameInfo {
+    font-family: 'Merriweather', serif;
+    margin-left: 65px;
+}
+
+.turnfor {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;;
+}
+
+.bl-0 {
+    border-left: 0;;
+}
+
+.bt-0 {
+    border-top: 0;;
+}
+
+.bb-0 {
+    border-bottom: 0;;
+}
+
+#reset {
+    margin: 0 50px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: larger;
+    background-color: darkslategray;
+    color: bisque;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 900px) {
+     .gameContainer {
+        flex-wrap: wrap;
+     }
+}
+
+@media screen and (max-width: 701px) {
+    .turnfor {
+        margin-top: 60px;
+    }
+}
